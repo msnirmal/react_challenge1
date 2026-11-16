@@ -28,18 +28,18 @@ function Intro() {
 function SkillList() {
   return (
     <div>
-      <Skill skill="React" level="Beginner" />
-      <Skill skill="Javascript" level="Intermediate" />
-      <Skill skill="HTML" level="Expert" />
-      <Skill skill="CSS" level="Intermediate" />
-      <Skill skill="GITHUB" level="Intermediate" />
+      <Skill skill="React" level="Beginner" color="orangered" />
+      <Skill skill="Javascript" level="Intermediate" color="yellow" />
+      <Skill skill="HTML" level="Expert" color="green" />
+      <Skill skill="CSS" level="Intermediate" color="lightblue" />
+      <Skill skill="GITHUB" level="Intermediate" color="grey" />
     </div>
   );
 }
 
 function Skill(props) {
   return (
-    <div>
+    <div style={{ backgroundColor: props.color }}>
       <span>{props.skill}</span>
       <span>{props.level}</span>
     </div>
